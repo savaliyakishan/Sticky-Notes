@@ -1,0 +1,28 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+-->
+<html>
+<head>
+  <title>Getting Started Extension's Popup</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="background.js"></script>
+  <div id="container">
+
+    <h3>Sticky Notes</h3>
+    <div id="notes-text-section"> 
+      <textarea id="notes-text" placeholder="Add your notes here..."></textarea>
+      <span id="msg"></span>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
